@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas & Kauã — Sites Profissionais para Pequenos e Grandes Negócios</title>
+  <meta name="description"
+    content="Criamos sites personalizados com qualidade profissional: integração WhatsApp, Instagram, Google Maps, avaliações reais e muito mais. Orçamento pelo WhatsApp." />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <header class="navbar" id="navbar" aria-label="Navegação principal">
+    <div class="container nav-container">
+
+      <a href="#hero" class="nav-logo" aria-label="Lucas e Kauã — Início">
+        <span class="logo-accent">L</span><span class="logo-sep">&</span><span class="logo-accent">K</span>
+        <span class="logo-dot" aria-hidden="true"></span>
+        <span class="logo-sub">dev</span>
+      </a>
+
+      <nav role="navigation" aria-label="Menu principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav__item"><a href="#quem-somos" class="nav__link">Quem somos</a></li>
+          <li class="nav__item"><a href="#o-que-fazemos" class="nav__link">O que fazemos</a></li>
+          <li class="nav__item"><a href="#nosso-trabalho" class="nav__link">Nosso trabalho</a></li>
+          <li class="nav__item"><a href="#video-demo" class="nav__link">Demo</a></li>
+          <li class="nav__item"><a href="#avaliacoes" class="nav__link">Avaliações</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/+554892163160?text=Olá%20Kauã!%20Quero%20fazer%20um%20orçamento%20de%20site."
+          class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          💬 Orçamento no WhatsApp
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menu de navegação" aria-expanded="false"
+        aria-controls="nav-modal">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Modal -->
+  <div class="modal__bg" id="modal-bg" aria-hidden="true"></div>
+  <nav class="nav-modal" id="nav-modal" role="navigation" aria-label="Menu mobile" aria-hidden="true">
+    <ul>
+      <li class="nav__item"><a href="#quem-somos" class="nav__link" data-nav-close>Quem somos</a></li>
+      <li class="nav__item"><a href="#o-que-fazemos" class="nav__link" data-nav-close>O que fazemos</a></li>
+      <li class="nav__item"><a href="#nosso-trabalho" class="nav__link" data-nav-close>Nosso trabalho</a></li>
+      <li class="nav__item"><a href="#video-demo" class="nav__link" data-nav-close>Demo</a></li>
+      <li class="nav__item"><a href="#avaliacoes" class="nav__link" data-nav-close>Avaliações</a></li>
+    </ul>
+    <div class="nav-modal-actions">
+      <a href="https://wa.me/5548921631600?text=Olá!%20Quero%20fazer%20um%20orçamento%20de%20site."
+        class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-nav-close>
+        💬 Orçamento no WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ======================================================
+         HERO — "Quem somos"
+         ====================================================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+
+        <!-- Eyebrow -->
+        <p class="eyebrow reveal reveal--d1">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          Estudantes · Desenvolvedores · Criadores
+        </p>
+
+        <!-- H1 destaque -->
+        <h1 class="hero-title reveal reveal--d2" id="hero-heading">
+          Quem somos?
+        </h1>
+
+        <!-- Fotos -->
+        <div class="team-cards reveal reveal--d3" aria-label="Nossa equipe">
+
+          <article class="team-card interactive-card">
+            <div class="team-photo-wrap">
+              <!-- ESPAÇO PARA FOTO DO LUCAS — substitua o src pela imagem real -->
+              <div class="team-photo-placeholder" aria-label="Foto do Lucas">
+                <div class="placeholder-inner">
+                  <span class="placeholder-icon" aria-hidden="true">📷</span>
+                  <p class="placeholder-label">Foto do Lucas</p>
+                  <p class="placeholder-hint">Substitua pela imagem real</p>
+                </div>
+              </div>
+              <!-- <img src="foto-lucas.jpg" alt="Foto do Lucas" class="team-photo" loading="lazy" /> -->
+            </div>
+            <div class="team-info">
+              <p class="team-name">Lucas</p>
+              <p class="team-role">Desenvolvimento &amp; Design</p>
+            </div>
+          </article>
+
+          <article class="team-card interactive-card">
+            <div class="team-photo-wrap">
+              <!-- ESPAÇO PARA FOTO DO KAUÃ — substitua o src pela imagem real -->
+              <div class="team-photo-placeholder" aria-label="Foto do Kauã">
+                <div class="placeholder-inner">
+                  <span class="placeholder-icon" aria-hidden="true">📷</span>
+                  <p class="placeholder-label">Foto do Kauã</p>
+                  <p class="placeholder-hint">Substitua pela imagem real</p>
+                </div>
+              </div>
+              <!-- <img src="foto-kaua.jpg" alt="Foto do Kauã" class="team-photo" loading="lazy" /> -->
+            </div>
+            <div class="team-info">
+              <p class="team-name">Kauã</p>
+              <p class="team-role">Desenvolvimento &amp; Vendas</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Descrição -->
+        <div class="hero-desc reveal reveal--d3">
+          <p>Somos estudantes de Desenvolvimento de Sistemas com <strong>2 anos de experiência</strong> na área.</p>
+          <p>Queremos colocar em prática nossas experiências e aprendizados entregando sites de alto nível.</p>
+          <p>Oferecemos um serviço <strong>abaixo do preço de mercado</strong>, acessível para pequenos e grandes
+            negócios.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================
+         FRASE DE IMPACTO
+         ====================================================== -->
+    <section class="impact-quote" aria-label="Frase de impacto">
+      <div class="container">
+        <blockquote class="impact-text reveal reveal--zoom">
+          "Empreender não é só abrir um negócio,<br class="br-desktop" />
+          é ter coragem de acreditar no<br class="br-desktop" />
+          que ainda está sendo construído."
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         O QUE FAZEMOS
+         ====================================================== -->
+    <section class="section section--surface" id="o-que-fazemos" aria-labelledby="fazemos-title">
+      <div class="container">
+
+        <span class="section-label reveal">Serviço</span>
+        <h2 class="section-title reveal" id="fazemos-title">O que fazemos?</h2>
+
+        <p class="section-subtitle reveal" style="margin-bottom:var(--sp-70);">
+          Criamos sites personalizados do jeito que você quiser — com qualidade profissional, entrega rápida e preço
+          justo para qualquer negócio.
+        </p>
+
+        <!-- Grid de features do serviço -->
+        <div class="service-grid">
+
+          <div class="interactive-card service-card reveal reveal--d1">
+            <div class="service-icon" aria-hidden="true">💬</div>
+            <h3 class="service-title">Contato direto via WhatsApp</h3>
+            <p class="service-desc">Botão de WhatsApp integrado para seus clientes entrarem em contato com um toque,
+              aumentando conversões.</p>
+          </div>
+
+          <div class="interactive-card service-card reveal reveal--d2">
+            <div class="service-icon" aria-hidden="true">📲</div>
+            <h3 class="service-title">Redes Sociais integradas</h3>
+            <p class="service-desc">Links diretos para Instagram e Facebook para fortalecer sua presença digital e
+              engajamento.</p>
+          </div>
+
+          <div class="interactive-card service-card reveal reveal--d3">
+            <div class="service-icon" aria-hidden="true">📍</div>
+            <h3 class="service-title">Localização do seu negócio</h3>
+            <p class="service-desc">Mapa interativo com a localização do seu negócio para clientes encontrarem você com
+              facilidade.</p>
+          </div>
+
+          <div class="interactive-card service-card reveal reveal--d1">
+            <div class="service-icon" aria-hidden="true">⭐</div>
+            <h3 class="service-title">Avaliações reais do Google</h3>
+            <p class="service-desc">Exibição das suas avaliações e notas reais do Google diretamente no site, gerando
+              credibilidade automática.</p>
+          </div>
+
+          <div class="interactive-card service-card reveal reveal--d2">
+            <div class="service-icon" aria-hidden="true">🖼️</div>
+            <h3 class="service-title">Fotos com descrição e preço</h3>
+            <p class="service-desc">Galeria profissional do seu produto ou serviço com descrição, preços e visual de
+              alto impacto.</p>
+          </div>
+
+          <div class="interactive-card service-card reveal reveal--d3">
+            <div class="service-icon" aria-hidden="true">🎬</div>
+            <h3 class="service-title">Vídeo do seu negócio</h3>
+            <p class="service-desc">Incorpore vídeos para mostrar seu serviço ou produto em ação, aumentando a confiança
+              do cliente.</p>
+          </div>
+
+        </div>
+
+        <!-- CTA de reforço -->
+        <div class="section-cta reveal reveal--d2">
+          <p class="section-cta-text">Personalize do jeito que você quiser.</p>
+          <a href="https://wa.me/5548921631600?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20serviço."
+            class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+            💬 Quero saber mais
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================
+         NOSSO TRABALHO — O que entregamos
+         ====================================================== -->
+    <section class="section section--dark" id="nosso-trabalho" aria-labelledby="trabalho-title">
+      <div class="container">
+
+        <span class="section-label section-label--brand reveal">Entregável</span>
+        <h2 class="section-title reveal" id="trabalho-title">
+          O que entregamos<br />
+          <span class="text-gradient">em cada site</span>
+        </h2>
+        <p class="section-subtitle reveal" style="margin-bottom:var(--sp-70);">
+          Cada site que desenvolvemos inclui esses elementos prontos para impulsionar seu negócio.
+        </p>
+
+        <div class="deliverables-grid">
+
+          <article class="interactive-card deliverable-card reveal reveal--zoom reveal--d1">
+            <div class="deliverable-icon-wrap" aria-hidden="true">
+              <span class="deliverable-icon">⭐</span>
+            </div>
+            <h3 class="deliverable-title">Avaliações do Google</h3>
+            <p class="deliverable-desc">Notas e comentários reais dos seus clientes, exibidos automaticamente para gerar
+              confiança.</p>
+          </article>
+
+          <article class="interactive-card deliverable-card reveal reveal--zoom reveal--d2">
+            <div class="deliverable-icon-wrap" aria-hidden="true">
+              <span class="deliverable-icon">📍</span>
+            </div>
+            <h3 class="deliverable-title">Localização e Mapa</h3>
+            <p class="deliverable-desc">Mapa interativo com endereço e botão de rota para clientes chegarem até você com
+              facilidade.</p>
+          </article>
+
+          <article class="interactive-card deliverable-card reveal reveal--zoom reveal--d3">
+            <div class="deliverable-icon-wrap" aria-hidden="true">
+              <span class="deliverable-icon">💰</span>
+            </div>
+            <h3 class="deliverable-title">Tabela de Preços</h3>
+            <p class="deliverable-desc">Apresente seus preços de forma clara e organizada, sem deixar o cliente com
+              dúvidas.</p>
+          </article>
+
+          <article class="interactive-card deliverable-card reveal reveal--zoom reveal--d1">
+            <div class="deliverable-icon-wrap" aria-hidden="true">
+              <span class="deliverable-icon">🛠️</span>
+            </div>
+            <h3 class="deliverable-title">Lista de Serviços</h3>
+            <p class="deliverable-desc">Detalhe todos os seus serviços com descrição, diferenciais e formas de contato
+              direto.</p>
+          </article>
+
+          <article class="interactive-card deliverable-card reveal reveal--zoom reveal--d2">
+            <div class="deliverable-icon-wrap" aria-hidden="true">
+              <span class="deliverable-icon">🖼️</span>
+            </div>
+            <h3 class="deliverable-title">Galeria de Fotos</h3>
+            <p class="deliverable-desc">Fotos profissionais do seu produto ou serviço com visual de alto impacto e
+              descrições.</p>
+          </article>
+
+          <article class="interactive-card deliverable-card reveal reveal--zoom reveal--d3">
+            <div class="deliverable-icon-wrap" aria-hidden="true">
+              <span class="deliverable-icon">📱</span>
+            </div>
+            <h3 class="deliverable-title">100% Responsivo</h3>
+            <p class="deliverable-desc">Site perfeito em celular, tablet e computador, para nenhum cliente ficar de
+              fora.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         DEMONSTRAÇÃO EM VÍDEO
+         ====================================================== -->
+    <section class="section section--surface" id="video-demo" aria-labelledby="video-title">
+      <div class="container">
+
+        <div class="video-header">
+          <span class="section-label reveal">Demonstração</span>
+          <h2 class="section-title reveal" id="video-title">
+            Veja na <span class="text-gradient">prática</span>
+          </h2>
+          <p class="section-subtitle reveal" style="margin-inline:auto; margin-bottom:var(--sp-70);">
+            Assista como um dos nossos sites funciona e perceba o nível de qualidade e profissionalismo que entregamos.
+          </p>
+        </div>
+
+        <!-- Player de vídeo — ESPAÇO PARA VÍDEO REAL -->
+        <div class="video-wrapper reveal reveal--zoom">
+          <div class="video-placeholder" aria-label="Player de vídeo demonstrativo">
+            <!--
+              PARA ADICIONAR SEU VÍDEO:
+              Opção 1 — YouTube: substitua o ID abaixo pelo ID do seu vídeo
+              <iframe
+                src="https://www.youtube.com/embed/SEU-VIDEO-ID"
+                title="Demonstração do nosso trabalho"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                class="video-iframe"
+              ></iframe>
+
+              Opção 2 — Vídeo próprio: coloque o arquivo na pasta e use:
+              <video
+                src="demo.mp4"
+                controls
+                poster="demo-thumbnail.jpg"
+                class="video-native"
+                preload="none"
+              ></video>
+            -->
+            <div class="video-placeholder-inner">
+              <div class="video-play-btn" aria-hidden="true">▶</div>
+              <p class="video-placeholder-text">Espaço para seu vídeo demonstrativo</p>
+              <p class="video-placeholder-hint">Cole o código do YouTube ou um arquivo .mp4 aqui</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================
+         AVALIAÇÕES DE CLIENTES
+         ====================================================== -->
+    <section class="section section--dark" id="avaliacoes" aria-labelledby="avaliacoes-title">
+      <div class="container">
+
+        <span class="section-label reveal">Depoimentos</span>
+        <h2 class="section-title reveal" id="avaliacoes-title">
+          O que nossos clientes<br />
+          <span class="text-brand">falam de nós</span>
+        </h2>
+
+        <div class="reviews-grid">
+
+          <article class="interactive-card review-card reveal reveal--d1">
+            <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="review-text">
+              "Site extremamente bem feito e fluido, melhorou muito minhas vendas. Recomendo muito o trabalho deles!"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">M</div>
+              <div>
+                <p class="review-name">Marcos A.</p>
+                <p class="review-seg">Dono de restaurante</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="interactive-card review-card reveal reveal--d2">
+            <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="review-text">
+              "Entregaram extremamente rápido e dentro do que eu precisava. Profissional do início ao fim, sem
+              enrolação."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true" style="background: var(--g-midnight)">J</div>
+              <div>
+                <p class="review-name">Juliana F.</p>
+                <p class="review-seg">Esteticista</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="interactive-card review-card reveal reveal--d3">
+            <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="review-text">
+              "Site muito bem feito. Design moderno, carregamento rápido e meus clientes adoraram a navegação pelo
+              celular."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true" style="background: linear-gradient(135deg,#ba0c2f,#9b51e0)">
+                R</div>
+              <div>
+                <p class="review-name">Ricardo S.</p>
+                <p class="review-seg">Mecânico automotivo</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="interactive-card review-card reveal reveal--d1">
+            <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="review-text">
+              "Excelente trabalho! O site ficou com cara de grande empresa mesmo sendo pequeno negócio. Preço muito
+              bom."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true" style="background: linear-gradient(135deg,#ff6900,#fcb900)">
+                A</div>
+              <div>
+                <p class="review-name">Ana Paula M.</p>
+                <p class="review-seg">Confeitaria artesanal</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="interactive-card review-card reveal reveal--d2">
+            <div class="review-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="review-text">
+              "Solicitei mudanças e eles atenderam rapidinho. Comunicação ótima, resultado incrível, super indico!"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true" style="background: linear-gradient(135deg,#00d084,#0693e3)">
+                P</div>
+              <div>
+                <p class="review-name">Pedro H.</p>
+                <p class="review-seg">Barbearia</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CTA FINAL — ORÇAMENTO NO WHATSAPP
+         ====================================================== -->
+    <section class="cta-whatsapp" id="orcamento" aria-labelledby="cta-title">
+      <div class="cta-whatsapp-glow" aria-hidden="true"></div>
+      <div class="container cta-whatsapp-inner">
+
+        <span class="section-label section-label--brand reveal">Pronto para começar?</span>
+
+        <h2 class="cta-whatsapp-title reveal reveal--zoom" id="cta-title">
+          Faça seu orçamento<br />
+          <span class="text-gradient">direto no WhatsApp</span>
+        </h2>
+
+        <p class="cta-whatsapp-sub reveal reveal--d2">
+          Conversamos pelo WhatsApp para entender o que você precisa e montar uma proposta personalizada — sem
+          burocracia, sem enrolação. Flexível para o seu tempo e o seu bolso.
+        </p>
+
+        <div class="cta-whatsapp-action reveal reveal--d3">
+          <a href="https://wa.me/+554892163160?text=Olá%20Kauã!%20Quero%20fazer%20um%20orçamento%20de%20site."
+            class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer" id="btn-whatsapp-cta">
+            <span class="whatsapp-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.49" />
+              </svg>
+            </span>
+            Fazer orçamento no WhatsApp
+          </a>
+        </div>
+
+        <p class="cta-whatsapp-note reveal reveal--d4">
+          📞 +55 48 9216-3160 (Kauã)
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+
+      <div class="footer-top">
+        <div class="footer-brand-block">
+          <p class="footer-brand-name">
+            <span style="color:var(--c-brand)">L</span>&amp;<span style="color:var(--c-brand)">K</span>
+            <span class="footer-brand-dot" aria-hidden="true"></span>dev
+          </p>
+          <p class="footer-tagline">Sites profissionais para qualquer negócio,<br />com preço acessível e entrega
+            rápida.</p>
+        </div>
+
+        <div class="footer-contact">
+          <p class="footer-column-title">Contato</p>
+          <a href="https://wa.me/+554892163160?text=Olá%20Kauã!%20Quero%20fazer%20um%20orçamento%20de%20site."
+            class="footer-whatsapp-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp do Kauã">
+            💬 +55 48 9216-3160 (Kauã)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Lucas &amp; Kauã Dev. Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="scroll-reveal.js" defer></script>
+  <script>
+    // ── NAVBAR SCROLL ──────────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ── HAMBURGER MENU ─────────────────────────────────────
+    const hamburger = document.getElementById('nav-hamburger');
+    const navModal = document.getElementById('nav-modal');
+    const modalBg = document.getElementById('modal-bg');
+
+    function openMenu() {
+      hamburger.classList.add('is-open');
+      navModal.classList.add('is-open');
+      modalBg.classList.add('is-open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      navModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      hamburger.classList.remove('is-open');
+      navModal.classList.remove('is-open');
+      modalBg.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      navModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.contains('is-open') ? closeMenu() : openMenu();
+    });
+    modalBg.addEventListener('click', closeMenu);
+    document.querySelectorAll('[data-nav-close]').forEach(el => el.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+  </script>
+
+</body>
+
+</html>
